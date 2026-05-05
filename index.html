@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="PPS Mansour — Artisan spécialisé en placoplâtre, faux plafonds décoratifs, staff l'arbi (الجبس العربي) et peinture en Tunisie. Réalisations haut de gamme pour particuliers et professionnels." />
+  <meta name="keywords" content="PPS Mansour, placoplâtre Tunisie, faux plafond décoratif, staff l'arbi, الجبس العربي, gypse traditionnel, peinture intérieure, décoration plafond LED, BA13, cloison sèche, artisan décoration, rénovation Tunisie" />
+  <meta property="og:title" content="PPS Mansour — Plâtrerie, Staff & Décoration Intérieure" />
+  <meta property="og:description" content="PPS Mansour : Placoplâtre, faux plafonds décoratifs, staff l'arbi (الجبس العربي) et peinture haut de gamme en Tunisie." />
+  <meta property="og:type" content="website" />
+  <title>PPS Mansour — Plâtrerie, Staff & Décoration Intérieure</title>
+  <link rel="icon" href="assets/logo-pps.png" type="image/png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Icons (Feather via CDN) -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-inner">
+      <div class="loader-logo">PPS Mansour</div>
+      <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ░░ NAVIGATION ░░ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <img src="/img/WhatsApp Image 2026-05-04 at 4.15.15 PM.jpeg" alt="PPS Mansour — Plâtrerie & Décoration" class="nav-logo-img" />
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">À Propos</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#process" class="nav-link">Processus</a></li>
+        <li><a href="#testimonials" class="nav-link">Témoignages</a></li>
+        <li><a href="#contact" class="nav-link nav-cta">Devis Gratuit</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ░░ HERO ░░ -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-overlay"></div>
+      <!-- Animated wood grain texture -->
+      <div class="hero-texture"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal-line">Artisan Plâtrier · Tunisie</p>
+      <h1 class="hero-title">
+        <span class="reveal-line" data-delay="0.1">L'Élégance dans</span>
+        <span class="reveal-line hero-title-accent" data-delay="0.25">Chaque Détail</span>
+      </h1>
+      <p class="hero-subtitle reveal-line" data-delay="0.4">
+        Placoplâtre & faux plafonds · Staff l'arbi (الجبس العربي)<br/>
+        Décoration intérieure · Peinture haut de gamme
+      </p>
+      <div class="hero-actions reveal-line" data-delay="0.55">
+        <a href="#contact" class="btn btn-primary">Demander un Devis</a>
+        <a href="#portfolio" class="btn btn-ghost">Voir Mes Réalisations</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Défiler</span>
+      <div class="scroll-line"></div>
+    </div>
+    <!-- Floating stats -->
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <span class="stat-num" data-target="12">0</span><span class="stat-unit">+</span>
+        <span class="stat-label">Années d'expérience</span>
+      </div>
+      <div class="hero-stat">
+        <span class="stat-num" data-target="340">0</span><span class="stat-unit">+</span>
+        <span class="stat-label">Projets réalisés</span>
+      </div>
+      <div class="hero-stat">
+        <span class="stat-num" data-target="98">0</span><span class="stat-unit">%</span>
+        <span class="stat-label">Clients satisfaits</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ À PROPOS ░░ -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-img-wrap scroll-reveal">
+            <div class="about-img about-img-main" style="background-image:url(/img/cover.png)" role="img" aria-label="Équipe PPS Mansour sur chantier"></div>
+            <div class="about-img about-img-accent about-img-cert" style="background-image:url('/img/certif\ 2.jfif')" role="img" aria-label="Diplôme et certification PPS Mansour">
+              <div class="cert-caption">
+                <i data-feather="award"></i>
+                Certifié et qualifié
+              </div>
+            </div>
+            <div class="about-badge">
+              <span class="badge-num">12</span>
+              <span class="badge-text">ans de<br/>passion</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-content">
+          <p class="section-eyebrow scroll-reveal">Notre Histoire</p>
+          <h2 class="section-title scroll-reveal">Un savoir-faire <em>transmis</em><br/>avec passion</h2>
+          <p class="about-text scroll-reveal">
+            Maître plâtrier depuis plus de 12 ans, je transforme les espaces bruts en intérieurs d'exception. Du faux plafond en placoplâtre le plus technique à la rosace en staff l'arbi la plus ornementée — chaque réalisation porte ma signature.
+          </p>
+          <p class="about-text scroll-reveal">
+            Héritier d'un savoir-faire ancestral et formé aux techniques modernes, je conjugue la richesse de l'artisanat tunisien et arabe avec les standards contemporains de la décoration intérieure. Chaque projet est unique — comme vous.
+          </p>
+          <div class="about-values scroll-reveal">
+            <div class="value-item">
+              <div class="value-icon"><i data-feather="award"></i></div>
+              <div>
+                <h4>Excellence</h4>
+                <p>Matériaux certifiés, finitions soignées au millimètre</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <div class="value-icon"><i data-feather="clock"></i></div>
+              <div>
+                <h4>Précision</h4>
+                <p>Respect des délais et des moindres détails</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <div class="value-icon"><i data-feather="heart"></i></div>
+              <div>
+                <h4>Authenticité</h4>
+                <p>Le staff l'arbi (الجبس العربي) dans sa forme la plus pure</p>
+              </div>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary scroll-reveal">Discutons de votre projet</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ SERVICES ░░ -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow scroll-reveal">Ce Que Je Fais</p>
+        <h2 class="section-title scroll-reveal">Mes <em>Services</em></h2>
+        <p class="section-subtitle scroll-reveal">De la cloison technique à l'ornement le plus fin — chaque intervention est réalisée avec rigueur, passion et un souci constant du détail.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card scroll-reveal" data-delay="0">
+          <div class="service-img" style="background-image:url('https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?auto=format&fit=crop&w=800&q=80')">
+            <div class="service-img-overlay"></div>
+          </div>
+          <div class="service-body">
+            <div class="service-icon"><i data-feather="grid"></i></div>
+            <h3>Placoplâtre (Placo / BA13)</h3>
+            <p>Pose de cloisons sèches, faux plafonds et doublages avec les meilleures plaques BA13. Solutions techniques alliant confort, isolation et durabilité.</p>
+            <ul class="service-list">
+              <li>Cloisons & division d'espaces</li>
+              <li>Faux plafonds BA13 standard</li>
+              <li>Isolation thermique & acoustique</li>
+            </ul>
+          </div>
+          <a href="#contact" class="service-cta">Demander un devis <i data-feather="arrow-right"></i></a>
+        </div>
+
+        <div class="service-card scroll-reveal" data-delay="0.1">
+          <div class="service-img" style="background-image:url('https://images.unsplash.com/photo-1582203423341-64b918240e25?auto=format&fit=crop&w=800&q=80')">
+            <div class="service-img-overlay"></div>
+          </div>
+          <div class="service-body">
+            <div class="service-icon"><i data-feather="star"></i></div>
+            <h3>Décoration en Placoplâtre</h3>
+            <p>Faux plafonds décoratifs avec formes modernes, retombées et niveaux. Éclairage LED intégré et habillages muraux design pour une atmosphère unique.</p>
+            <ul class="service-list">
+              <li>Plafonds arrondis, niveaux & retombées</li>
+              <li>Niches lumineuses & LED intégré</li>
+              <li>Murs design & habillages décoratifs</li>
+            </ul>
+          </div>
+          <a href="#contact" class="service-cta">Demander un devis <i data-feather="arrow-right"></i></a>
+        </div>
+
+        <div class="service-card scroll-reveal" data-delay="0.2">
+          <div class="service-img" style="background-image:url('https://images.unsplash.com/photo-1524230572899-a752b3835840?auto=format&fit=crop&w=800&q=80')">
+            <div class="service-img-overlay"></div>
+          </div>
+          <div class="service-body">
+            <div class="service-icon"><i data-feather="compass"></i></div>
+            <h3>Staff l'arbi — الجبس العربي</h3>
+            <p>L'art du gypse traditionnel tunisien dans toute sa splendeur. Moulures classiques, rosaces, colonnes et arabesques sculptées à la main pour des intérieurs d'exception.</p>
+            <ul class="service-list">
+              <li>Rosaces & moulures de plafond</li>
+              <li>Colonnes & pilastres ornementés</li>
+              <li>Arabesques style oriental & tunisien</li>
+            </ul>
+          </div>
+          <a href="#contact" class="service-cta">Demander un devis <i data-feather="arrow-right"></i></a>
+        </div>
+
+        <div class="service-card scroll-reveal" data-delay="0.3">
+          <div class="service-img" style="background-image:url('https://images.unsplash.com/photo-1529722155810-17303d209942?auto=format&fit=crop&w=800&q=80')">
+            <div class="service-img-overlay"></div>
+          </div>
+          <div class="service-body">
+            <div class="service-icon"><i data-feather="edit-2"></i></div>
+            <h3>Peinture & Finitions</h3>
+            <p>Peinture intérieure et extérieure haut de gamme. Préparation soignée des surfaces, enduits, lissage et effets décoratifs pour un résultat impeccable.</p>
+            <ul class="service-list">
+              <li>Peinture mate, satinée & brillante</li>
+              <li>Préparation & lissage des surfaces</li>
+              <li>Effets décoratifs : béton ciré, patine…</li>
+            </ul>
+          </div>
+          <a href="#contact" class="service-cta">Demander un devis <i data-feather="arrow-right"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ PORTFOLIO ░░ -->
+  <section class="portfolio section" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow scroll-reveal">Réalisations</p>
+        <h2 class="section-title scroll-reveal">Notre <em>Portfolio</em></h2>
+        <p class="section-subtitle scroll-reveal">Chaque photo raconte une histoire — celle d'un client satisfait et d'un artisan passionné.</p>
+      </div>
+
+      <!-- Filter tabs -->
+      <div class="portfolio-filters scroll-reveal">
+        <button class="filter-btn active" data-filter="all">Tous les projets</button>
+        <button class="filter-btn" data-filter="placo">Placoplâtre</button>
+        <button class="filter-btn" data-filter="deco-placo">Faux plafonds</button>
+        <button class="filter-btn" data-filter="staff">Staff l'arbi</button>
+        <button class="filter-btn" data-filter="peinture">Peinture</button>
+      </div>
+
+      <!-- Grid -->
+      <div class="portfolio-grid" id="portfolioGrid">
+
+        <div class="portfolio-item" data-category="placo">
+          <div class="portfolio-img" style="background-image:url(/img/placo.jpg)" role="img" aria-label="Chantier Placoplâtre BA13 — PPS Mansour">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <h4>Chantier Placoplâtre</h4>
+                <p>Tunis · 2024</p>
+                <button class="portfolio-zoom" data-src="img/placo.jpg" data-title="Chantier Placoplâtre BA13" data-location="Tunis · 2024"><i data-feather="maximize-2"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item portfolio-item--wide" data-category="deco-placo">
+          <div class="portfolio-img" style="background-image:url('/img/faux\ plafonds\ 1.jpg')" role="img" aria-label="Faux plafond LED avec lustre — PPS Mansour">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <h4>Faux Plafond LED & Lustre</h4>
+                <p>Sousse · 2024</p>
+                <button class="portfolio-zoom" data-src="img/faux%20plafonds%201.jpg" data-title="Faux Plafond Décoratif LED & Lustre" data-location="Sousse · 2024"><i data-feather="maximize-2"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-category="deco-placo">
+          <div class="portfolio-img" style="background-image:url('/img/Plafond\ LED\ Intégré.jpg')" role="img" aria-label="Plafond spots LED intégrés — PPS Mansour">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <h4>Plafond Spots LED Intégrés</h4>
+                <p>La Marsa · 2024</p>
+                <button class="portfolio-zoom" data-src="img/Plafond%20LED%20Int%C3%A9gr%C3%A9.jpg" data-title="Plafond Spots LED Intégrés" data-location="La Marsa · 2024"><i data-feather="maximize-2"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-category="staff">
+          <div class="portfolio-img" style="background-image:url('img/Rosace\ Arabesque\ —\ Staff.jpg')" role="img" aria-label="Rosace et voûtes staff l'arbi — PPS Mansour">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <h4>Rosace & Voûtes Staff</h4>
+                <p>Carthage · 2024</p>
+                <button class="portfolio-zoom" data-src="img/Rosace%20Arabesque%20%E2%80%94%20Staff.jpg" data-title="Rosace & Voûtes — Staff l'arbi (الجبس العربي)" data-location="Carthage · 2024"><i data-feather="maximize-2"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item portfolio-item--tall" data-category="staff">
+          <div class="portfolio-img" style="background-image:url('img/Niches\ Staff\ Ornementées.jpg')" role="img" aria-label="Niches et étagères staff ornementées — PPS Mansour">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <h4>Niches Staff Ornementées</h4>
+                <p>Hammamet · 2023</p>
+                <button class="portfolio-zoom" data-src="img/Niches%20Staff%20Ornementées.jpg" data-title="Niches Staff l'arbi Ornementées (الجبس العربي)" data-location="Hammamet · 2023"><i data-feather="maximize-2"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-category="peinture">
+          <div class="portfolio-img" style="background-image:url('img/Béton\ Ciré\ Premium.jpeg')" role="img" aria-label="Béton ciré premium salle de bain — PPS Mansour">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <h4>Béton Ciré Premium</h4>
+                <p>Sfax · 2024</p>
+                <button class="portfolio-zoom" data-src="img/Béton%20Ciré%20Premium.jpeg" data-title="Béton Ciré Premium — Peinture décorative" data-location="Sfax · 2024"><i data-feather="maximize-2"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-item portfolio-item--wide" data-category="deco-placo">
+          <div class="portfolio-img" style="background-image:url('img/Salon\ Orientale\ Complet.jpg')" role="img" aria-label="Salon faux plafond LED — PPS Mansour">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <h4>Salon Faux Plafond LED</h4>
+                <p>Monastir · 2024</p>
+                <button class="portfolio-zoom" data-src="img/Salon%20Orientale%20Complet.jpg" data-title="Salon Faux Plafond LED Décoratif" data-location="Monastir · 2024"><i data-feather="maximize-2"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+<div class="portfolio-img" style="background-image:url('img/Peinture\ Intérieure\ Premium.jpg')" role="img" aria-label="Effet texture décorative — PPS Mansour">
+  <div class="portfolio-hover">
+    <div class="portfolio-hover-content">
+      <h4>Effet Texture Décorative</h4>
+      <p>Tunis · 2023</p>
+      <button class="portfolio-zoom" data-src="img/Peinture%20Int%C3%A9rieure%20Premium.jpg" data-title="Effet Texture Décorative — Peinture premium" data-location="Tunis · 2023"><i data-feather="maximize-2"></i></button>
+    </div>
+  </div>
+</div>
+
+        <div class="portfolio-item" data-category="placo">
+          <div class="portfolio-img" style="background-image:url('img/Installation\ Combles\ Placo.jfif')" role="img" aria-label="Installation placoplâtre combles — PPS Mansour">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <h4>Installation Combles Placo</h4>
+                <p>Bizerte · 2023</p>
+                <button class="portfolio-zoom" data-src="img/Installation%20Combles%20Placo.jfif " data-title="Installation Combles — Placoplâtre BA13" data-location="Bizerte · 2023"><i data-feather="maximize-2"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ LIGHTBOX ░░ -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose"><i data-feather="x"></i></button>
+    <button class="lightbox-prev" id="lightboxPrev"><i data-feather="chevron-left"></i></button>
+    <button class="lightbox-next" id="lightboxNext"><i data-feather="chevron-right"></i></button>
+    <div class="lightbox-content">
+      <div class="lightbox-img-wrap">
+        <img src="" alt="" id="lightboxImg" />
+        <div class="lightbox-placeholder" id="lightboxPlaceholder"></div>
+      </div>
+      <div class="lightbox-caption">
+        <h4 id="lightboxTitle"></h4>
+        <p id="lightboxLocation"></p>
+      </div>
+    </div>
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+  </div>
+
+  <!-- ░░ PROCESSUS ░░ -->
+  <section class="process section" id="process">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow scroll-reveal">Comment Je Travaille</p>
+        <h2 class="section-title scroll-reveal">Un Processus <em>Structuré</em></h2>
+        <p class="section-subtitle scroll-reveal">De votre première idée jusqu'à la livraison finale, chaque étape est menée avec méthode et transparence.</p>
+      </div>
+      <div class="process-timeline">
+
+        <div class="process-step scroll-reveal" data-delay="0">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <div class="step-icon"><i data-feather="map"></i></div>
+            <h3>Visite Technique</h3>
+            <p>Je me déplace sur votre chantier pour évaluer l'espace, prendre les mesures et cerner précisément vos besoins et vos envies.</p>
+          </div>
+          <div class="step-connector"></div>
+        </div>
+
+        <div class="process-step scroll-reveal" data-delay="0.1">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <div class="step-icon"><i data-feather="file-text"></i></div>
+            <h3>Étude & Devis</h3>
+            <p>Élaboration du plan de réalisation, choix des matériaux et présentation d'un devis détaillé et transparent. Zéro surprise.</p>
+          </div>
+          <div class="step-connector"></div>
+        </div>
+
+        <div class="process-step scroll-reveal" data-delay="0.2">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <div class="step-icon"><i data-feather="tool"></i></div>
+            <h3>Préparation Chantier</h3>
+            <p>Protection des zones voisines, traçage au cordeau, approvisionnement en matériaux certifiés. Le chantier démarre dans les règles de l'art.</p>
+          </div>
+          <div class="step-connector"></div>
+        </div>
+
+        <div class="process-step scroll-reveal" data-delay="0.3">
+          <div class="step-number">04</div>
+          <div class="step-content">
+            <div class="step-icon"><i data-feather="layers"></i></div>
+            <h3>Réalisation</h3>
+            <p>Pose du placoplâtre, sculpture du staff, application de la peinture — chaque geste est précis, chaque ornement est unique.</p>
+          </div>
+          <div class="step-connector"></div>
+        </div>
+
+        <div class="process-step scroll-reveal" data-delay="0.4">
+          <div class="step-number">05</div>
+          <div class="step-content">
+            <div class="step-icon"><i data-feather="check-circle"></i></div>
+            <h3>Finition & Livraison</h3>
+            <p>Nettoyage complet, retouches finales et réception conjointe. Je ne livre qu'un espace dont je suis fier, à la hauteur de vos attentes.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ STATS BANNER ░░ -->
+  <section class="stats-banner">
+    <div class="stats-bg"></div>
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-block scroll-reveal">
+          <span class="stat-big" data-target="12">0</span><span class="stat-big-unit">+</span>
+          <p>Années d'expérience</p>
+        </div>
+        <div class="stat-block scroll-reveal" data-delay="0.1">
+          <span class="stat-big" data-target="340">0</span><span class="stat-big-unit">+</span>
+          <p>Projets livrés</p>
+        </div>
+        <div class="stat-block scroll-reveal" data-delay="0.2">
+          <span class="stat-big" data-target="98">0</span><span class="stat-big-unit">%</span>
+          <p>Clients satisfaits</p>
+        </div>
+        <div class="stat-block scroll-reveal" data-delay="0.3">
+          <span class="stat-big" data-target="15">0</span><span class="stat-big-unit">+</span>
+          <p>Villes desservies</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ TÉMOIGNAGES ░░ -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow scroll-reveal">Ce Qu'ils Disent</p>
+        <h2 class="section-title scroll-reveal">Témoignages <em>Clients</em></h2>
+      </div>
+      <div class="testimonials-carousel-wrap scroll-reveal">
+        <div class="testimonials-carousel" id="testimonialsCarousel">
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <blockquote>"PPS Mansour a réalisé notre faux plafond décoratif avec des retombées et un éclairage LED intégré. Le résultat est digne d'un magazine de déco. Un vrai professionnel !"</blockquote>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="background-color:#C4956A">S</div>
+              <div>
+                <strong>Sana B.</strong>
+                <span>Tunis · Faux plafond décoratif</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <blockquote>"La rosace en staff l'arbi que PPS Mansour a sculptée pour notre salon est une œuvre d'art. Chaque arabesque est parfaite. Je n'avais jamais vu un tel niveau de finition."</blockquote>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="background-color:#8B5E3C">M</div>
+              <div>
+                <strong>Mohamed K.</strong>
+                <span>Sousse · Staff l'arbi (الجبس العربي)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <blockquote>"Cloisons, faux plafond et peinture — PPS Mansour a géré tout notre appartement. Chantier propre, délais respectés, résultat impeccable. Je recommande les yeux fermés !"</blockquote>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="background-color:#6B4226">L</div>
+              <div>
+                <strong>Leila M.</strong>
+                <span>La Marsa · Rénovation complète</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <blockquote>"Les colonnes en staff et les moulures de plafond ont transformé notre villa en palais. PPS Mansour maîtrise l'art du gypse traditionnel comme peu d'artisans en Tunisie."</blockquote>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="background-color:#A0704A">K</div>
+              <div>
+                <strong>Karim T.</strong>
+                <span>Hammamet · Staff & Décoration</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <blockquote>"J'ai fait appel à PPS Mansour pour la peinture de mon salon avec effet béton ciré. Le rendu est spectaculaire, mes invités me posent la question à chaque visite. Merci !"</blockquote>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="background-color:#C9A84C">R</div>
+              <div>
+                <strong>Rim H.</strong>
+                <span>Sfax · Peinture décorative</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="carousel-controls">
+          <button class="carousel-btn" id="carouselPrev"><i data-feather="chevron-left"></i></button>
+          <div class="carousel-dots" id="carouselDots"></div>
+          <button class="carousel-btn" id="carouselNext"><i data-feather="chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ CONTACT ░░ -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Left: Info -->
+        <div class="contact-info">
+          <p class="section-eyebrow scroll-reveal">Travaillons Ensemble</p>
+          <h2 class="section-title scroll-reveal">Parlons de votre <em>projet</em></h2>
+          <p class="contact-intro scroll-reveal">Chaque grand espace commence par une conversation. Dites-moi votre vision — je vous dirai comment la réaliser.</p>
+
+          <div class="contact-details scroll-reveal">
+            <a href="https://wa.me/21621030900" class="contact-item contact-whatsapp" target="_blank" rel="noopener">
+              <div class="contact-item-icon whatsapp-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              </div>
+              <div>
+                <span class="contact-label">WhatsApp</span>
+                <span class="contact-value">+216 21 030 900</span>
+              </div>
+            </a>
+
+            <div class="contact-item scroll-reveal">
+              <div class="contact-item-icon"><i data-feather="phone"></i></div>
+              <div>
+                <span class="contact-label">Téléphone</span>
+                <span class="contact-value"><a href="tel:+21621030900">+216 21 030 900</a></span>
+              </div>
+            </div>
+
+            <div class="contact-item scroll-reveal">
+              <div class="contact-item-icon"><i data-feather="mail"></i></div>
+              <div>
+                <span class="contact-label">Email</span>
+                <span class="contact-value">contact@ppsmansour.tn</span>
+              </div>
+            </div>
+
+            <div class="contact-item scroll-reveal">
+              <div class="contact-item-icon"><i data-feather="map-pin"></i></div>
+              <div>
+                <span class="contact-label">Localisation</span>
+                <span class="contact-value">Tunis, Sousse<br/>Déplacements dans tout le pays</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-social scroll-reveal">
+            <span>Suivez mon travail :</span>
+            <div class="social-links">
+              <a href="#" aria-label="Instagram" class="social-link"><i data-feather="instagram"></i></a>
+              <a href="#" aria-label="Facebook" class="social-link"><i data-feather="facebook"></i></a>
+              <a href="#" aria-label="LinkedIn" class="social-link"><i data-feather="linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="contact-form-wrap scroll-reveal">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">Prénom *</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Votre prénom" required />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Nom *</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Votre nom" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" placeholder="votre@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Téléphone</label>
+              <input type="tel" id="phone" name="phone" placeholder="+216 XX XXX XXX" />
+            </div>
+            <div class="form-group">
+              <label for="service">Type de projet *</label>
+              <div class="select-wrap">
+                <select id="service" name="service" required>
+                  <option value="" disabled selected>Choisir un service…</option>
+                  <option value="placo">Placoplâtre (Placo / BA13)</option>
+                  <option value="deco-placo">Décoration en placoplâtre</option>
+                  <option value="staff">Staff l'arbi — الجبس العربي</option>
+                  <option value="peinture">Peinture & finitions</option>
+                  <option value="autre">Autre projet</option>
+                </select>
+                <i data-feather="chevron-down" class="select-arrow"></i>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Décrivez votre projet *</label>
+              <textarea id="message" name="message" rows="5" placeholder="Parlez-moi de votre projet, vos idées, votre budget estimatif…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span class="btn-text">Envoyer ma demande</span>
+              <i data-feather="send"></i>
+            </button>
+            <p class="form-note">Réponse garantie sous 24h · Devis 100% gratuit</p>
+          </form>
+          <div class="form-success" id="formSuccess">
+            <div class="success-icon"><i data-feather="check-circle"></i></div>
+            <h3>Message envoyé !</h3>
+            <p>Merci pour votre confiance. Je vous recontacte dans les 24h pour discuter de votre projet.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <img src="assets/logo-pps.png" alt="PPS Mansour — Plâtrerie & Décoration" class="footer-logo-img" />
+            </div>
+            <p>Artisan plâtrier certifié, PPS Mansour transforme vos espaces avec le placoplâtre, le staff l'arbi (الجبس العربي) et la peinture depuis plus de 12 ans. L'excellence artisanale au service de votre intérieur.</p>
+            <div class="footer-social">
+              <a href="#" aria-label="Instagram"><i data-feather="instagram"></i></a>
+              <a href="#" aria-label="Facebook"><i data-feather="facebook"></i></a>
+              <a href="#" aria-label="LinkedIn"><i data-feather="linkedin"></i></a>
+            </div>
+          </div>
+          <div class="footer-nav-col">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="#about">À Propos</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#process">Processus</a></li>
+              <li><a href="#testimonials">Témoignages</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#services">Placoplâtre (Placo / BA13)</a></li>
+              <li><a href="#services">Décoration en placoplâtre</a></li>
+              <li><a href="#services">Staff l'arbi — الجبس العربي</a></li>
+              <li><a href="#services">Peinture & finitions</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact-col">
+            <h4>Contact Rapide</h4>
+            <p><i data-feather="map-pin"></i> Tunis, Tunisie</p>
+            <p><i data-feather="phone"></i> <a href="tel:+21621030900" style="color:inherit">+216 21 030 900</a></p>
+            <a href="https://wa.me/21621030900" class="footer-whatsapp" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              WhatsApp Direct
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2025 PPS Mansour · Plâtrerie, Staff & Décoration · Tous droits réservés</p>
+        <p>Fait avec passion en Tunisie 🇹🇳</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <i data-feather="arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
