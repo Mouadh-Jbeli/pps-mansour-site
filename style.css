@@ -254,7 +254,7 @@ ul { list-style: none; }
 }
 .hero-bg {
   position: absolute; inset: 0;
-  background-image: url('assets/hero-cover.jpg');
+  background-image: url('img/WhatsApp Image 2026-05-04 at 4.15.15 PM.jpeg');
   background-size: cover; background-position: center;
   transform: scale(1.08);
   animation: heroZoom 10s var(--ease-out) forwards;
@@ -1206,7 +1206,9 @@ blockquote::before { content: '"'; font-size: 3em; color: var(--clr-gold); opaci
   width: auto;
   object-fit: contain;
   display: block;
-  filter: brightness(0) invert(1);
+  background: rgba(255,255,255,0.95);
+  border-radius: 4px;
+  padding: 6px 10px;
 }
 .footer-brand p { font-size: 14px; line-height: 1.7; margin-bottom: 28px; max-width: 300px; }
 
